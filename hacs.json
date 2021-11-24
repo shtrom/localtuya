@@ -1,5 +1,5 @@
 {
-  "name": "Local Tuya",
+  "name": "Local Tuya Zombie fix",
   "domains": ["climate", "cover", "fan", "light", "number", "select", "sensor", "switch"],
   "homeassistant": "0.116.0",
   "iot_class": ["Local Push"]
