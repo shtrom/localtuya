@@ -558,8 +558,8 @@ class TuyaProtocol(asyncio.Protocol, ContextualLogger):
     def _decode_payload(self, payload):
         if not payload:
             payload = "{}"
-        elif payload.startswith(b"{"):
-            pass
+        #elif payload.startswith(b"{"):
+        #    pass
         elif payload.startswith(PROTOCOL_VERSION_BYTES_31):
             payload = payload[len(PROTOCOL_VERSION_BYTES_31) :]  # remove version header
             # remove (what I'm guessing, but not confirmed is) 16-bytes of MD5
